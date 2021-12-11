@@ -1,0 +1,23 @@
+{
+  "name": "@reedsun/eslint-config",
+  "version": "1.0.0",
+  "description": "ESLint Sharable Configurations using prettier and support TypeScript.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ReedSun/eslint-config.git"
+  },
+  "keywords": [
+    "eslint",
+    "eslintConfig"
+  ],
+  "author": {
+    "name": "ReedSun",
+    "email": "superreedsun@gmail.com"
+  },
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/ReedSun/eslint-config/issues"
+  },
+  "homepage": "https://github.com/ReedSun/eslint-config#readme"
+}
