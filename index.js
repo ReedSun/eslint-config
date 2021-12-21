@@ -4,7 +4,7 @@
  * File Created: Saturday, 2021-12-11 16:38:37
  * Author: ReedSun (reedsun@shanjing-inc.com)
  * -----
- * Last Modified: Saturday, 2021-12-11 17:25:29
+ * Last Modified: Tuesday, 2021-12-21 14:38:30
  * Modified By: ReedSun (reedsun@shanjing-inc.com)
  * -----
  * Copyright 2013 - 2021, Qingdao Shanjing Information Technology Co., Ltd.
@@ -32,7 +32,7 @@ module.exports = {
   plugins: ['react', '@typescript-eslint', 'typescript-sort-keys'],
   rules: {
     'max-lines': [2, { skipBlankLines: true, skipComments: true }],
-    'max-lines-per-function': 2,
+    'max-lines-per-function': [2, { skipBlankLines: true, skipComments: true }],
     'no-alert': 1,
     'no-console': 1,
     'no-debugger': 1,
