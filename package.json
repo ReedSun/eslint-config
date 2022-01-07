@@ -1,6 +1,6 @@
 {
   "name": "@reedsun/eslint-config",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "ESLint Sharable Configurations using prettier and support TypeScript.",
   "main": "index.js",
   "repository": {
@@ -23,9 +23,6 @@
     "url": "https://github.com/ReedSun/eslint-config/issues"
   },
   "homepage": "https://github.com/ReedSun/eslint-config#readme",
-  "peerDependencies": {
-    "eslint": ">= 8"
-  },
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "^5.6.0",
     "@typescript-eslint/parser": "^5.6.0",
@@ -33,7 +30,6 @@
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-react": "^7.27.1",
-    "eslint-plugin-typescript-sort-keys": "^2.1.0",
     "prettier": "^2.5.1",
     "typescript": "^4.5.3"
   }

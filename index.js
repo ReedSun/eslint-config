@@ -4,10 +4,10 @@
  * File Created: Saturday, 2021-12-11 16:38:37
  * Author: ReedSun (reedsun@shanjing-inc.com)
  * -----
- * Last Modified: Tuesday, 2021-12-21 14:38:30
+ * Last Modified: Friday, 2022-01-07 16:41:00
  * Modified By: ReedSun (reedsun@shanjing-inc.com)
  * -----
- * Copyright 2013 - 2021, Qingdao Shanjing Information Technology Co., Ltd.
+ * Copyright 2013 - 2022, Qingdao Shanjing Information Technology Co., Ltd.
  */
 module.exports = {
   env: {
@@ -29,8 +29,9 @@ module.exports = {
     ecmaVersion: 12,
     sourceType: 'module',
   },
-  plugins: ['react', '@typescript-eslint', 'typescript-sort-keys'],
+  plugins: ['react', '@typescript-eslint'],
   rules: {
+    '@typescript-eslint/member-ordering': [2, { default: { order: 'alphabetically' } }],
     'max-lines': [2, { skipBlankLines: true, skipComments: true }],
     'max-lines-per-function': [2, { skipBlankLines: true, skipComments: true }],
     'no-alert': 1,
@@ -53,7 +54,5 @@ module.exports = {
     ],
     'sort-imports': 2,
     'sort-keys': 2,
-    'typescript-sort-keys/interface': 2,
-    'typescript-sort-keys/string-enum': 2,
   },
 };
