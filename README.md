@@ -27,3 +27,6 @@ module.exports = {
 ```
 
 `eslint` will work and follow the @reedsun rules.
+
+# Vue version
+see [branch vue](https://github.com/ReedSun/eslint-config/tree/vue).
