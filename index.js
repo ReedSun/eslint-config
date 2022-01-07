@@ -1,26 +1,32 @@
 /*
  * File: index.js
- * Project: @reedsun/eslint-config
+ * Project: @reedsun/eslint-config-vue
  * File Created: Saturday, 2021-12-11 16:38:37
  * Author: ReedSun (reedsun@shanjing-inc.com)
  * -----
- * Last Modified: Tuesday, 2021-12-21 14:38:30
+ * Last Modified: Friday, 2022-01-07 11:44:30
  * Modified By: ReedSun (reedsun@shanjing-inc.com)
  * -----
- * Copyright 2013 - 2021, Qingdao Shanjing Information Technology Co., Ltd.
+ * Copyright 2013 - 2022, Qingdao Shanjing Information Technology Co., Ltd.
  */
 module.exports = {
   env: {
     browser: true,
-    es2021: true,
     node: true,
   },
   extends: [
-    'eslint:recommended',
-    'plugin:react/recommended',
-    'plugin:@typescript-eslint/recommended',
-    'plugin:prettier/recommended',
+    "plugin:vue/vue3-essential",
+    "eslint:recommended",
+    "@vue/typescript/recommended",
+    "@vue/prettier",
+    "@vue/prettier/@typescript-eslint",
   ],
+  globals: {
+    defineEmits: 'readonly',
+    defineExpose: 'readonly',
+    defineProps: 'readonly',
+    withDefaults: 'readonly',
+  },
   parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaFeatures: {
@@ -29,7 +35,7 @@ module.exports = {
     ecmaVersion: 12,
     sourceType: 'module',
   },
-  plugins: ['react', '@typescript-eslint', 'typescript-sort-keys'],
+  plugins: ['@typescript-eslint', 'typescript-sort-keys'],
   rules: {
     'max-lines': [2, { skipBlankLines: true, skipComments: true }],
     'max-lines-per-function': [2, { skipBlankLines: true, skipComments: true }],
