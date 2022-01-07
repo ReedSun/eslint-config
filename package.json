@@ -7,6 +7,9 @@
     "type": "git",
     "url": "git+https://github.com/ReedSun/eslint-config.git"
   },
+  "scripts": {
+    "access-publish": "yarn publish --access public"
+  },
   "keywords": [
     "eslint",
     "eslintConfig"
