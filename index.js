@@ -4,7 +4,7 @@
  * File Created: Saturday, 2021-12-11 16:38:37
  * Author: ReedSun (reedsun@shanjing-inc.com)
  * -----
- * Last Modified: Friday, 2022-01-07 16:35:30
+ * Last Modified: Monday, 2022-02-07 10:31:45
  * Modified By: ReedSun (reedsun@shanjing-inc.com)
  * -----
  * Copyright 2013 - 2022, Qingdao Shanjing Information Technology Co., Ltd.
@@ -27,11 +27,8 @@ module.exports = {
     defineProps: 'readonly',
     withDefaults: 'readonly',
   },
-  parser: '@typescript-eslint/parser',
   parserOptions: {
-    ecmaFeatures: {
-      jsx: true,
-    },
+    ecmaFeatures: { jsx: true },
     ecmaVersion: 12,
     sourceType: 'module',
   },
