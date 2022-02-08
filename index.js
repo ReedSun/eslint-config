@@ -4,7 +4,7 @@
  * File Created: Saturday, 2021-12-11 16:38:37
  * Author: ReedSun (superreedsun@gmail.com)
  * -----
- * Last Modified: Tuesday, 2022-02-08 18:23:26
+ * Last Modified: Tuesday, 2022-02-08 18:25:41
  * Modified By: ReedSun (superreedsun@gmail.com)
  */
 module.exports = {
@@ -36,6 +36,7 @@ module.exports = {
     'no-console': 1,
     'no-debugger': 1,
     'no-else-return': 2,
+    'no-undef': 0, // https://typescript-eslint.io/docs/linting/troubleshooting/#i-get-errors-from-the-no-undef-rule-about-global-variables-not-being-defined-even-though-there-are-no-typescript-errors
     'object-shorthand': 2,
     'prefer-template': 2,
     'prettier/prettier': [
