@@ -41,6 +41,7 @@ module.exports = {
     'no-console': 1,
     'no-debugger': 1,
     'no-else-return': 2,
+    'no-undef': 0, // https://typescript-eslint.io/docs/linting/troubleshooting/#i-get-errors-from-the-no-undef-rule-about-global-variables-not-being-defined-even-though-there-are-no-typescript-errors
     'object-shorthand': 2,
     'prefer-template': 2,
     'prettier/prettier': [
