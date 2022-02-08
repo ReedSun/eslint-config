@@ -2,12 +2,10 @@
  * File: index.js
  * Project: @reedsun/eslint-config-vue
  * File Created: Saturday, 2021-12-11 16:38:37
- * Author: ReedSun (reedsun@shanjing-inc.com)
+ * Author: ReedSun (superreedsun@gmail.com)
  * -----
- * Last Modified: Monday, 2022-02-07 10:31:45
- * Modified By: ReedSun (reedsun@shanjing-inc.com)
- * -----
- * Copyright 2013 - 2022, Qingdao Shanjing Information Technology Co., Ltd.
+ * Last Modified: Tuesday, 2022-02-08 18:14:58
+ * Modified By: ReedSun (superreedsun@gmail.com)
  */
 module.exports = {
   env: {
