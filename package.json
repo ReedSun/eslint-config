@@ -1,6 +1,6 @@
 {
   "name": "@reedsun/eslint-config",
-  "version": "1.0.4",
+  "version": "1.1.0",
   "description": "ESLint Sharable Configurations using prettier and support TypeScript.",
   "main": "index.js",
   "repository": {
