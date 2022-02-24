@@ -4,9 +4,11 @@
  * File Created: Saturday, 2021-12-11 16:38:37
  * Author: ReedSun (superreedsun@gmail.com)
  * -----
- * Last Modified: Tuesday, 2022-02-08 18:14:58
+ * Last Modified: Thursday, 2022-02-24 13:59:50
  * Modified By: ReedSun (superreedsun@gmail.com)
  */
+const { defaultOrder } = require('@typescript-eslint/eslint-plugin/dist/rules/member-ordering');
+
 module.exports = {
   env: {
     browser: true,
@@ -31,8 +33,12 @@ module.exports = {
     sourceType: 'module',
   },
   plugins: ['@typescript-eslint'],
+  root: true,
   rules: {
-    '@typescript-eslint/member-ordering': [2, { default: { order: 'alphabetically' } }],
+    '@typescript-eslint/member-ordering': [
+      2,
+      { default: { memberTypes: defaultOrder, order: 'alphabetically' } },
+    ],
     'max-lines': [2, { skipBlankLines: true, skipComments: true }],
     'max-lines-per-function': [2, { skipBlankLines: true, skipComments: true }],
     'no-alert': 1,
