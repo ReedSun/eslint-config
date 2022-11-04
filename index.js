@@ -4,7 +4,7 @@
  * File Created: Saturday, 2021-12-11 16:38:37
  * Author: ReedSun (superreedsun@gmail.com)
  * -----
- * Last Modified: Thursday, 2022-02-24 13:59:50
+ * Last Modified: Saturday, 2022-10-29 16:26:54
  * Modified By: ReedSun (superreedsun@gmail.com)
  */
 const { defaultOrder } = require('@typescript-eslint/eslint-plugin/dist/rules/member-ordering');
@@ -20,6 +20,7 @@ module.exports = {
     '@vue/typescript/recommended',
     '@vue/prettier',
     '@vue/prettier/@typescript-eslint',
+    'plugin:tailwindcss/recommended',
   ],
   globals: {
     defineEmits: 'readonly',
@@ -62,5 +63,12 @@ module.exports = {
     ],
     'sort-imports': 2,
     'sort-keys': 2,
+    // throw error in tailwindcss rule
+    'tailwindcss/classnames-order': 2,
+    'tailwindcss/enforces-negative-arbitrary-values': 2,
+    'tailwindcss/enforces-shorthand': 2,
+    'tailwindcss/migration-from-tailwind-2': 2,
+    'tailwindcss/no-arbitrary-value': 2,
+    'tailwindcss/no-custom-classname': 2,
   },
 };
